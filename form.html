@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label {
+            display: inline-block;
+            width: 200px;
+        }
+        form>div{
+            margin-bottom: 20px;
+        }
+        video {
+            width: 200px;
+            height: 250px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Contact Us Form</h1>
+        <form method="post" action="./about-us.html">
+            <div>
+                <label for="fullName">Name</label>
+                <input type="text" id="fullName" name="fullName" maxlength="20"  minlength="10" placeholder="Enter your full name" required/>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email"  required/>
+            </div>
+            <div>
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob"  max="2024-09-20" />
+            </div>
+            <div>
+                <label for="aadhar">Aadhar Number</label>
+                <input type="text" id="aadhar" name="aadhar" pattern="^[2-9]{1}[0-9]{3}\s?[0-9]{4}\s?[0-9]{4}$" required />
+                <hint>1234 5689 1234</hint>
+            </div>
+            <div>
+                <label>Gender</label>
+                <label><input type="radio" name="gender" id="maleRadio" value="MALE" /> Male</label>
+                <label><input type="radio" name="gender" id="femaleRadio" value="FEMALE" /> Female</label>
+            </div>
+            <div>
+                <label>Favorite Subjects</label>
+                <label><input type="checkbox" name="subjects" value="MATH" id="math" />Math</label>
+                <label><input type="checkbox" name="subjects" value="HINDI" id="hindi" />Hindi</label>
+                <label><input type="checkbox" name="subjects" value="MARATHI" id="marathi" />Marathi</label>
+                <label><input type="checkbox" name="subjects" value="ENGLISH" id="english" />Ehglish</label>
+                <label><input type="checkbox" name="subjects" value="TELUGU" id="telugu" />Telugu</label>
+            </div>
+            <div>
+                <label for="favoriteMovie"> Select Favorite Movie</label>
+                <select id="favoriteMovie" name="favoriteMovie" multiple>
+                    <option value="">Select Movie</option>
+                    <option value="PK">PK</option>
+                    <option value="DDLJ">DDLJ</option>
+                    <option value="GodZilla">God Zilla</option>
+                </select>
+            </div>
+
+                <div>
+                    <label for="favoriteColor"> Select Favorite Color </label>
+                    <input type="color" id="favoriteColor" name="favoriteColor" />
+                </div>
+
+                <div>
+                    <label for="salary"> Select Salary </label>
+                    <div>10,000<input type="range" id="salary" name="salary" min="10000" max="50000" onchange="changeEventHandler(event)" /> 50,000</div>
+                    <div id="salaryOutput"></div>
+                </div>
+
+                <div>
+                    <label for="aboutYou"> About You</label>
+                    <textarea id="aboutYou" name="aboutYou" maxlength="200" placeholder="About you"></textarea>
+                </div>
+            <button type="submit">Save Details</button>
+            <button type="reset">Reset</button>
+            <button type="button">CLick Me</button>
+        </form>
+    </div>
+    <svg height="100" width="100" xmlns="http://www.w3.org/2000/svg">
+        <circle r="45" cx="50" cy="50" fill="red" />
+      </svg>
+
+      <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+        Sorry, your browser does not support canvas.
+        </canvas>
+
+        <video src="./videos/videos.mp4" controls></video>
+        <audio src="./videos/audio.mp3" controls></audio>
+
+
+        <embed src="./videos/videos.mp4"></embed>
+
+        <!--<embed src="./videos/audio.mp3"></embed>-->
+
+        <embed src="./about-us.html"></embed>
+    <script>
+        function changeEventHandler(ev){
+            document.getElementById("salaryOutput").innerText = ev.target.value;
+        }
+    </script>
+    <script>
+        // Create a canvas
+        const canvas = document.getElementById("myCanvas");
+        const ctx = canvas.getContext("2d");
+        
+        // Define a new path
+        ctx.beginPath();
+        
+        // Set a start-point
+        ctx.moveTo(0,0);
+        
+        // Set an end-point
+        ctx.lineTo(200,100);
+        
+        // Draw it
+        ctx.stroke();
+        </script>
+</body>
+</html>
