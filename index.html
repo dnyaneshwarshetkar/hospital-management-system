@@ -9,13 +9,29 @@
         ul#navigation li{
             display:inline;
         }
+        p{
+            color: #00000000;
+        }
     </style>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/custom.css" />
 </head>
 <body>
-    <embed src="./header.html"></embed>
+    <header>
+        <nav>
+            <ul id="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">About Us</a> </li>
+                <li><a href="index.html">Contact Us</a></li>
+                <li><a href="index.html">Products </a></li>
+                <li><a href="index.html">services</a></li>
+                <li><a href="#learn-on-w3schools">Learn on W3schools</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
         <section>
-            <h1>Our Mission</h1>
+            <h1 style="color:blue;background-color:blanchedalmond;">Our Mission</h1>
             <p>Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim
             labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi
             animcupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est
@@ -97,7 +113,10 @@
             <iframe width="560" height="315" src="https://www.youtube.com/embed/rgwzTP_au5k?si=bIgm2UMQ41S0zeW8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </section>
     </main>
-    <embed src="./footer.html"></embed>
+    <footer id="footer">
+        <a href="">Terms and Conditions</a>
+        <a href="">Privacy Policy</a>
+    </footer>
     <script>
         localStorage.setItem("address", "MMEAC Rahatani Phata");
         console.log(localStorage.getItem("name"));

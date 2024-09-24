@@ -1,0 +1,9 @@
+/* this is will be applied to aside element*/
+aside{
+    color:brown;
+}
+
+body{
+    background-color: darkcyan;
+    background-image: url("./../images/peakpx.jpg");
+}
