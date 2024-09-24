@@ -6,4 +6,31 @@ aside{
 body{
     background-color: darkcyan;
     background-image: url("./../images/peakpx.jpg");
+    background-repeat: no-repeat;
+    /*background-attachment:fixed;*/
+    /*background-position: right top;*/
+    background-size: 200px 300px;
+    background-origin:border-box;
+}
+
+.background-apply {
+    margin: 50px;
+    padding: 50px;
+    /*border: 10px dotted;*/
+    border-left: 2px solid;
+    border-top: 2px solid;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+
+    outline: 5px solid red;
+
+    /*border-radius: 100%;*/
+
+
+    background: url("./../images/peakpx.jpg") top left  no-repeat, url("./../images/e2f82ed6-4180-4648-9560-949a48793661.webp") top right  no-repeat;
+    background-size: 200px 400px, 300px 500px;
+    /*background-repeat: no-repeat;
+    background-origin: border-box;
+    background-size: 100% 100%;
+    background-clip: border-box;*/
 }
