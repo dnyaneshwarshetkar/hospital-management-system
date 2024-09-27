@@ -1,0 +1,10 @@
+@font-face {
+	font-family: 'superchunk';
+	src: local('superchunk'), url('./superchunk.woff') format('woff');
+}
+/* use this class to attach this font to any element i.e. <p class="fontsforweb_fontid_187">Text with this font applied</p> */
+.fontsforweb_fontid_187 {
+	font-family: 'superchunk' !important;
+}
+
+/* Font downloaded from FontsForWeb.com */

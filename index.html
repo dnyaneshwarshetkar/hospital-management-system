@@ -10,11 +10,44 @@
             display:inline;
         }
         p{
-            color: #00000000;
+            /*color: #00000000*/;
         }
     </style>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/custom.css" />
+    <link rel="stylesheet" href="./fonts/superchunk/font.css">
+    <style>
+        * {
+           text-transform: uppercase; 
+        }
+        h1[title="Our Mission"] {
+            text-align: center;
+            /*text-decoration:overline;*/
+            text-transform: capitalize;
+            text-shadow: 5px 10px 12px red;
+            font-family: "superchunk";
+            font-size: 50px;
+        }
+        h1[title="Our Aim"] {
+            text-align: right;
+            text-decoration:overline;
+            text-transform: capitalize;
+        }
+        section.our-mission-section p {
+            word-spacing: 5px;
+            line-height: 20px;
+            word-wrap: break-word;
+            /*width: 100px;
+            height: 300px;
+            overflow-x: hidden;
+            overflow-y: scroll;*/
+            white-space: normal;
+
+            font-family: 'Courier New', Courier, monospace;
+            font-weight:900;
+            font-size: 20px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -30,9 +63,9 @@
         </nav>
     </header>
     <main>
-        <section>
-            <h1 style="color:blue;background-color:blanchedalmond;">Our Mission</h1>
-            <p>Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim
+        <section class="our-mission-section">
+            <h1 style="color:blue;background-color:blanchedalmond;" title="Our Mission">Our Mission</h1>
+            <p>jhlkjkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkLorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim
             labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi
             animcupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est
             aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia
@@ -41,13 +74,24 @@
             proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia
             eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim.
             Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et
-            culpa duis.</p>
+            culpa duis.
+                Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim
+                labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi
+                animcupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est
+                aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia
+                pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit
+                commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa
+                proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia
+                eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim.
+                Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et
+                culpa duis.
+        </p>
             <aside>
                 Health is Wealth.
             </aside>
         </section>
         <section>
-            <h1> Our Aim</h1>
+            <h1 title="Our Aim"> Our Aim</h1>
             <p>Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim
             labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi
             animcupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est
