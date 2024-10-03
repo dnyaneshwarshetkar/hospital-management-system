@@ -34,3 +34,24 @@ body{
     background-size: 100% 100%;
     background-clip: border-box;*/
 }
+
+.flex-container{
+    display: flex;
+}
+.flex-container div {
+    width: 33vw;
+}
+.flex-container div img {
+    width: 30vw;
+}
+
+@media screen and (orientation:landscape) {
+    body {
+        background-color: brown;
+    }
+}
+
+section img {
+    width: 100vw;
+    height: 33vh;
+}

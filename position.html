@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        #call-me-button {
+            position: relative;
+            bottom: 0px;
+            right: 0px;
+            background-color: aqua; 
+            border-radius: 100%;  
+        }
+        #whatsapp-me-button {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        header{
+            margin-left: 100px;
+            margin-right:100px;
+            position: relative;
+        }
+        #facebook-me-button {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+
+        }
+        .sticky-div {
+            position: sticky;
+            top:10px;
+        }
+        section.about-me-section p.para-background{
+            background-color: red;
+        }
+        section>p{
+            font-size: larger;
+        }
+
+        section p#first-para ~ p {
+            background-color: blue;
+        }
+        /*input#name{
+            background-color: bisque;
+        }
+        input#name:hover{
+            background-color: red;
+        }
+        input#name:focus{
+            background-color: green;
+        }*/
+        label[for="name"]::before{
+            content: "*";
+        }
+        input#name:required {
+            background-color: aqua;
+        }
+        input#name:valid{
+            background-color: greenyellow;
+        }
+        /*p::first-line{
+            background-color: blueviolet;
+        }*/
+        p::first-letter {
+            font-size:xx-large;
+        }
+        p::selection {
+            background-color: yellow;
+        }
+        input#name::placeholder {
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Position</h1>
+        <button type="button" id="call-me-button">C</button>
+        <button type="button" id="whatsapp-me-button">W</button>
+        <button type="button" id="facebook-me-button">F</button>
+    </header>
+    <main>
+        <form action="about-us.html" method="get">
+            <div style="position: relative;">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="username"  required placeholder="Enter your name"/>
+            </div>
+            <button type="submit">Save</button>
+        </form>
+            <div class="sticky-div">
+                This is sticky div.
+            </div>
+
+            <p>
+                Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim
+                labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi
+                animcupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est
+                aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia
+                pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit
+                commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa
+                proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia
+                eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim.
+                Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et
+                culpa duis.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim
+                labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi
+                animcupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est
+                aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia
+                pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit
+                commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa
+                proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia
+                eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim.
+                Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et
+                culpa duis.
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim
+                labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi
+                animcupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est
+                aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia
+                pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit
+                commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa
+                proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia
+                eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim.
+                Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et
+                culpa duis.
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim
+                labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi
+                animcupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est
+                aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia
+                pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit
+                commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa
+                proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia
+                eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim.
+                Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et
+                culpa duis.
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim
+                labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi
+                animcupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est
+                aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia
+                pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit
+                commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa
+                proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia
+                eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim.
+                Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et
+                culpa duis.
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim
+                labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi
+                animcupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est
+                aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia
+                pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit
+                commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa
+                proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia
+                eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim.
+                Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et
+                culpa duis.
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim
+                labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi
+                animcupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est
+                aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia
+                pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit
+                commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa
+                proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia
+                eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim.
+                Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et
+                culpa duis.
+            </p>
+
+            <section class="about-me-section">
+                <h1>About Me</h1>
+                <p class="para-background">
+                    Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim
+                    labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi
+                    animcupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est
+                    aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia
+                    pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit
+                    commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa
+                    proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia
+                    eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim.
+                    Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et
+                    culpa duis.
+                </p>
+            </section>
+            <section class="about-us-section">
+                <h1>About Us</h1>
+                <p class="para-background" id="first-para">
+                    Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim
+                    labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi
+                    animcupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est
+                    aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia
+                    pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit
+                    commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa
+                    proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia
+                    eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim.
+                    Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et
+                    culpa duis.
+                </p>
+                <p class="para-background">
+                    Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim
+                    labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi
+                    animcupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est
+                    aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia
+                    pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit
+                    commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa
+                    proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia
+                    eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim.
+                    Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et
+                    culpa duis.
+                </p>
+                <p class="para-background">
+                    Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim
+                    labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi
+                    animcupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est
+                    aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia
+                    pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit
+                    commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa
+                    proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia
+                    eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim.
+                    Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et
+                    culpa duis.
+                </p>
+            </section>
+    </main>
+    <footer>
+        <a>Terms and conditions</a>| <a>Privacy Policy</a>
+    </footer>
+</body>
+</html>
