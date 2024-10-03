@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        div.transition{
+            width: 200px;
+            height:200px;
+            background-color: aquamarine;
+            transition: background-color 2s ease-in-out,width 2s ease-in-out, height 2s ease-in-out, transform 2s ease-in-out;
+        }
+        div.transition:hover{
+            background-color: brown;
+            width: 400px;
+            height:400px;
+            transform: rotateZ(45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="transition">
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,13 @@
+.flex-container {
+    flex-direction: column;
+}
+.flex-container div {
+    width: 100vw;
+}
+.flex-container div img {
+    width: 100vw;
+}
+
+section img {
+    
+}

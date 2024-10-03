@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        p#first-para{
+            border: 2px solid;
+            padding: 20px;
+            width: 500px;
+            height: 400px;
+            box-sizing: border-box;
+        }
+        section div img {
+            width: 100%;
+            height: 200px;
+        }
+        section>div {
+            margin: 0px 1vw;
+            width: 30vw;
+            float: left;
+            box-sizing: border-box;
+            padding: 10px;
+            border: 1px solid aqua; 
+            height: 750px;
+            position:relative;
+        }
+        section>div:hover {
+            background-color: blue;
+        }
+        section>div>p {
+            height: 350px;
+            /*overflow: scroll;*/
+        }
+        section>div>div.actions {
+            position: absolute;
+            bottom:0;
+            padding: 20px;
+        }
+        section>div>div.actions>button {
+            padding: 10px;
+            background-color: blueviolet;
+            border: 2px solid;
+        }
+        section>p {
+            clear: both;
+        }
+        /*section>div:nth-child(1){
+            float:left;
+        }
+        section>div:nth-child(2){
+            float:right;
+        }*/
+    </style>
+</head>
+<body>
+    <header></header>
+    <main>
+        <p id="first-para">
+            Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim
+            labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi
+            animcupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est
+            aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia
+            pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit
+            commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa
+            proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia
+            eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim.
+            Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et
+            culpa duis.
+        </p>
+        <section>
+            <div>
+                <img src="./images/laptop.jpg" />
+                <h4>Laptop</h4>
+                <p>Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim
+                labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi
+                animcupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est
+                aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia
+                pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit
+                commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa
+                proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia
+                eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim.
+                Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et
+                culpa duis.</p>
+                <div class="actions">
+                    <button type="button">Add to Cart</button>
+                    <button type="button">Add Favorite</button>
+                    <button type="button"> Buy Now</button>
+                </div>
+            </div>
+            <div>
+                <img src="./images/smart-watch.jpg" />
+                <h4>Smart Watch</h4>
+                <p>Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim
+                labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi
+                animcupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est
+                aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia
+                pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit
+                commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa
+                proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia
+                eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim.
+                Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et
+                culpa duis.</p>
+                <div class="actions">
+                    <button type="button">Add to Cart</button>
+                    <button type="button">Add Favorite</button>
+                    <button type="button"> Buy Now</button>
+                </div>
+            </div>
+            <div>
+                <img src="./images/mobile.jpg" />
+                <h4>Mobile</h4>
+                <p>Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim
+                labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi
+                animcupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est
+                aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia
+                pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit
+                commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa
+                proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia
+                eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim.
+                Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et
+                culpa duis.</p>
+                <div class="actions">
+                    <button type="button">Add to Cart</button>
+                    <button type="button">Add Favorite</button>
+                    <button type="button"> Buy Now</button>
+                </div>
+            </div>
+                <p>
+                    Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim
+                    labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi
+                    animcupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est
+                    aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia
+                    pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit
+                    commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa
+                    proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia
+                    eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim.
+                    Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et
+                    culpa duis.
+                </p>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>
